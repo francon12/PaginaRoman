@@ -39,49 +39,83 @@
 	<!-- ends nav -->
 	<header>
 		<div class="container-fluid">
-			<h1>Noticias</h1>
+			<h1 class="noticias">Noticias</h1>
+			<div class="d-flex justify-content-center">
+				<img class="fondo" src="../noticias/roman.png" alt="fondo azul oscuro">
+			</div>
 		</div>
 	</header>
 	<!-- ends header -->
-	<main class="principalNoti">
-		<section class="section">
-			<div class="articulos1">
-				<article class="articlePrincipal">
-					<h2>Hoy 20:30hs Boca - Central Cordoba</h2>
-					<img src="../noticias/bocacentral.jpg" alt="imagen del partido de boca hoy vs centrla cordoba">
-					<p>Boca Juniors visita a Central Córdoba de Santiago del Estero en el estadio Madre de Ciudades, en partido de la duodécima fecha de la zona 2 de la Copa de la Liga Profesional de Fútbol, con arbitraje de Yael Falcón Pérez y las siguientes formaciones: 
-					<br>
-					<span class="spanCentral">Central Córdoba (SdE):</span> Cristopher Toselli; José Gómez, José Leguizamón, Matías Di Benedetto y Franco Sbuttoni; Matías Laba, Jesús Soraire, Francisco González Metilli y Jonathan Bay; Renzo López y Claudio Riaño. DT: Sergio Rondina.
-					<br>
-					<span class="spanBoca">Boca Juniors:</span> Javier García; Luis Advíncula, Gabriel Aranda, Marcos Rojo y Agustín Sandez; Diego González, Guillermo Fernández y Oscar Romero; Eduardo Salvio, Darío Benedetto y Sebastián Villa. DT: Sebastián Battaglia.</p>
-				</article>
-				<article class="articlePrincipal">
-					<h2>Boca Campeon en Cordoba: 3 - 0 a Tigre y se quedo con la Copa de la Liga</h2>
-					<img src="../noticias/campeon.jpg" alt="Boca campeon de la liga 2022">
-					<p> <span class="spanBoca">Boca Juniors</span> aplastó 3-0 a Tigre en la final de la Copa de la Liga Profesional y es el campeón del torneo argentino. Lo hizo ante más de 55 mil personas en el estadio Mario Alberto Kempes. Y su público deliró en la ciudad de Córdoba. Los dirigidos por Sebastián Battaglia fueron efectivos y terminaron festejando con justicia.
-					Marcos Rojo le dio la ventaja a Boca con un cabezazo a los 48 minutos del primer tiempo. El defensor del Xeneize les ganó a todos en el área y sacó un remate que no pudo contener el arquero Marinelli.
-					El segundo gol llegó a los 22 minutos del segundo tiempo, cuando mejor estaba Tigre. Fue obra y arte de Frank Fabra, con un tremendo zurdazo desde afuera del área.
-					El tercer gol fue de Luis Vázquez, a los 40 minutos del segundo tiempo, cuando Tigre ya estaba jugado en ataque buscando el descuento..</p>
-				</article>
-			</div>
-			<div class="articulos2">
-				<article class="article2">
-					<h2>Riquelme asume como Vicepresiende de Boca</h2>
-					<img src="../noticias/riquelmenoti.jpg" alt="Noticias de que riquelme es viceprecidente de boca">
-					<p>Juan Román Riquelme anunció este miércoles que será candidato a vicepresidente segundo de Jorge Amor Ameal, uno de los postulantes de la oposición en Boca, y adelantó que en caso de ganar en las elecciones del 8 de diciembre estará a cargo del fútbol.
-					"Siento que tengo posibilidades de ayudar a mi club. Voy a ir de vicepresidente segundo de la lista de Ameal. Claramente no estoy preparado para ser presidente hoy, pero veremos dentro cuatro años y tanto Jorge como Mario (Pergolini) me ayudarán con ese tema. Siempre y cuando la gente nos vote, me voy a hacer cargo del fútbol", afirmó en declaraciones formuladas a Fox Sports.Riquelme le agradeció al oficialismo, encabezado por Christian Gribaudo, por "tratar de sumarme" y no quiso adelantar nada sobre lo que será su proyecto futbolístico en sí.
-					"Amo mucho a mi club. Yo pedí la unidad y pasó lo que podía pasar, que era casi imposible que se dé. Si tenemos la suerte de ganar, luego de las elecciones contaré los detalles sobre el aspecto deportivo", indicó..</p>
-				</article>
-				<article class="article2">
-					<h2>Boca es puro festejo: el campeón del fútbol argentino está en octavos de la Libertadores</h2>
-					<img src="../noticias/varela.webp" alt="Varela jugador de boca festejando">
-					<p>En la última fecha del a fase de grupos, por la zona E, Boca cumplió la misión que le faltaba para cerrar un semestre ideal. Derrotó 1 a 0 a Deportivo Cali y se metió en octavos de final de la Copa Libertadores. El equipo de Sebastián Battaglia fue campeón de la Copa de la Liga en el ámbito local hace tres días y vive tiempos de pura alegría.
+	<!-- inicio main -->
+	<main class="llave container-fluid">
+		<div class="accordion" id="accordionPanelsStayOpenExample">
+  		<div class="accordion-item" id="noti">
+    		<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+      <button class="accordion-button textnoti" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Boca Juniors vs Corinthians
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show text-center" aria-labelledby="panelsStayOpen-headingOne">
+      <div>
+        	<img src="../noticias/boquita.webp" class="foto1" alt="boca contra corinthians">
+        </div>
+      <div class="accordion-body textnoti">
+        <strong>Martes 05/07/2022 a las 21:30</strong> El Xeneize y Corinthians buscarán el próximo martes 5 de julio seguir con vida en CONMEBOL - Copa Libertadores 2022. Ambos llegan con chances de clasificar a Cuartos de Final luego de empatar 0 a 0 en la ida. 
+        El partido de vuelta será a las 21:30 (hora Argentina) en la Bombonera.El duelo correspondiente a la llave 6 de CONMEBOL - Copa Libertadores 2022 se jugará el próximo martes 5 de julio a las 21:30 (hora Argentina). 
+        Las últimas 5 veces que se enfrentaron en el torneo tuvieron todos los resultados posibles. El conjunto local acumuló 1 victoria, mientras que la visita sumó 1. En 3 partidos terminaron igualados en el marcador. 
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item" id="noti">
+    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+      <button class="accordion-button collapsed textnoti" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Boca Campeon en Cordoba 
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse text-center" aria-labelledby="panelsStayOpen-headingTwo">
+      <div class="accordion-body textnoti">
+      	 <div>
+        	<img src="../noticias/campeon.jpg" class="foto2" alt="boca contra corinthians">
+        </div>
+         <strong>Boca Juniors aplastó 3-0 a Tigre</strong> en la final de la Copa de la Liga Profesional y es el campeón del torneo argentino. Lo hizo ante más de 55 mil personas en el estadio Mario Alberto Kempes. Y su público deliró en la ciudad de Córdoba. Los dirigidos por Sebastián Battaglia fueron efectivos y terminaron festejando con justicia.
+		 Marcos Rojo le dio la ventaja a Boca con un cabezazo a los 48 minutos del primer tiempo. El defensor del Xeneize les ganó a todos en el área y sacó un remate que no pudo contener el arquero Marinelli.
+		 El segundo gol llegó a los 22 minutos del segundo tiempo, cuando mejor estaba Tigre. Fue obra y arte de Frank Fabra, con un tremendo zurdazo desde afuera del área.
+		 El tercer gol fue de Luis Vázquez, a los 40 minutos del segundo tiempo, cuando Tigre ya estaba jugado en ataque buscando el descuento..overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item text-center " id="noti">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed textnoti" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Riquelme asume como Vicepresiende de Boca
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+      <div class="accordion-body textnoti">
+      	<div>
+        	<img src="../noticias/vice.jpg"  class="foto3" alt="Riquelme vice presidente">
+        </div>
+        <strong>Juan Román Riquelme anunció este miércoles que será candidato a vicepresidente segundo de Jorge Amor Ameal,</strong>  uno de los postulantes de la oposición en Boca, y adelantó que en caso de ganar en las elecciones del 8 de diciembre estará a cargo del fútbol."Siento que tengo posibilidades de ayudar a mi club. Voy a ir de vicepresidente segundo de la lista de Ameal. Claramente no estoy preparado para ser presidente hoy, pero veremos dentro cuatro años y tanto Jorge como Mario (Pergolini) me ayudarán con ese tema. Siempre y cuando la gente nos vote, me voy a hacer cargo del fútbol", afirmó en declaraciones formuladas a Fox Sports.Riquelme le agradeció al oficialismo, encabezado por Christian Gribaudo, por "tratar de sumarme" y no quiso adelantar nada sobre lo que será su proyecto futbolístico en sí.
+				"Amo mucho a mi club. Yo pedí la unidad y pasó lo que podía pasar, que era casi imposible que se dé. Si tenemos la suerte de ganar, luego de las elecciones contaré los detalles sobre el aspecto deportivo", indicó..
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item text-center" id="noti">
+    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+      <button class="accordion-button collapsed textnoti" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Boca es puro festejo
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+      <div class="accordion-body textnoti">
+      	<div>
+        	<img src="../noticias/varela.webp" class="foto4" alt="Riquelme vice presidente">
+        </div>
+        <strong>El campeón del fútbol argentino está en octavos de la Libertadores</strong> En la última fecha del a fase de grupos, por la zona E, Boca cumplió la misión que le faltaba para cerrar un semestre ideal. Derrotó 1 a 0 a Deportivo Cali y se metió en octavos de final de la Copa Libertadores. El equipo de Sebastián Battaglia fue campeón de la Copa de la Liga en el ámbito local hace tres días y vive tiempos de pura alegría.
 					Como si fuera poco, el Xeneize se metió en la siguiente instancia como primero de su grupo, porque Always Ready le sacó un empate a Corinthians en Brasil, en una de las sorpresas del certamen continental en su versión 2022.
-					El Changuito fue lo mejor de Boca en el comienzo, pero la más clara llegó con un disparo lejano de Alan Varela que pegó en el palo. El propio volante estuvo cerca un par de minutos después con otro disparo que se quedó en el cuerpo de un rival.</p>
-				</article>
-			</div>
-		</section>
-		<!-- ends article -->
+					El Changuito fue lo mejor de Boca en el comienzo, pero la más clara llegó con un disparo lejano de Alan Varela que pegó en el palo. El propio volante estuvo cerca un par de minutos después con otro disparo que se quedó en el cuerpo de un rival.
+      </div>
+</div>
 	</main>
 		 <div class="container-fluid">
       <footer class="row footerBg paddingTB rsociales">

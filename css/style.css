@@ -10,7 +10,7 @@ html{
 	font-size: 62.5%;
 }
 body{
-	background-color: lightblue;
+	background-color: black;
 	background-attachment: fixed;
 }
 
@@ -86,6 +86,8 @@ footer{
 	text-align: center;
 	background-color: white;
 	width: 60vw;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 .marg{
 	background-color: black;
@@ -97,7 +99,7 @@ footer{
 	align-items: center;
 }
 .redes img{
-	width: 6vw;
+	width: 3vw;
 	margin: 0px 10px;
 }
 @media (max-width: 989px){
@@ -366,225 +368,156 @@ footer{
 }
 
 /*================ Noticias ================*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*================ Noticias ================*/
-/* --------------- Main ----------------*/
-.headerNoti{
-	display: flex;
-	flex-flow: column nowrap;
-}
-.textoPrincipal{
+.noticias{
 	background-color: #FFA500 ;
 	text-align: center;
+	width: 100vw;
 	font-size: 40px;
+	font-style: italic;
+	font-weight: bolder;
 }
-.principalNoti{
+.fondo{
+	width: 80vw;
+}
+.textnoti{
+	font-size: 15px;
+	line-height: 1.8;
+}
+.llave{
+	margin-top: 20px;
+	width: 70vw;
 	display: flex;
-	flex-flow: column nowrap;
-}
-.section{
-	background-color: #1F4690;
-	display: flex;
-}
-
-	.articulos1{
-		background-color: #3A5BA0 ;
-		flex: 2 1 auto;
-		display: flex;
-		flex-flow: row wrap;
-		border-bottom-style: dotted;
-		border-bottom: -10px;
-		border-bottom-color: black;
-	}
-		.articlePrincipal{
-				background-color: whitesmoke;
-				width: 70%;
-				margin: 30px 150px;
-				flex: 1 1 50%;
-				display: flex;
-				flex-flow: column;
-				justify-content: center;
-				align-items: center;
-				border-style: solid;
-				border-radius: -10px;
-				border-color: black;
-				}
-				.articlePrincipal h2{
-					color: white;
-					background-color: #3A5BA0 ;
-					width: 100%;
-					text-align: center;
-					font-size: 30px;
-					font-style: italic;
-					border-bottom-style: solid;
-					border-bottom-color: black;
-					}
-				.articlePrincipal img{
-					margin: 20px 20px;
-					}
-				.articlePrincipal p{
-						width:80% ;
-						font-size: 15px;
-						font-family: "Roboto", sans-serif;
-						font-style: normal;
-						line-height: 1.6;
-						text-align: center;
-						}
-
-.spanCentral{
-	font-weight: bold;
-	text-decoration: underline 2px;
-}
-.spanBoca{
-	font-weight: bold;
-	text-decoration: underline 2px;
-	color: blue ;
-}
-	.articulos2{
-		background-color: #FFE5B4 ;
-		flex: 2 1 auto;
-		display: flex;
-		flex-flow: column nowrap;
-		border-bottom-style: dotted;
-		border-bottom: -10px;
-		border-bottom-color: black;
-		}	
-		.article2{
-				background-color: #FFE5B4;
-				border-style: solid;
-				border-radius: -10px;
-				border-color: black;
-				margin-top: 50px;
-		}
-				.article2 img{
-					width: 100%;
-					height: auto;
-					}
-					.article2 h2{
-						color: white;
-						background-color: #1F4690 ;
-						text-align: center;
-						font-size: 20px;
-						font-style: italic;
-						padding: 10px;
-						}
-					.article2 p{
-						width:100% ;
-						height: auto;
-						font-size: 15px;
-						font-family: "Roboto", sans-serif;
-						font-style: normal;
-						line-height: 1.6;
-						text-align: center;
-						margin-top: 40px;
-						margin-bottom: 40px;
-						}
-/* ================ Contacto ==================*/
-.divContenedor{
-	width: 100%;
-	margin: 50px 50px;
-	height: auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
 	align-items: center;
-	text-align: center;
+	justify-content: center;
 }
-.tituloContacto{
-	background-color: rgb(0, 0, 51);
-	color:#F5B42C;
-	font-size: 50px;
-	font-family: "Joan", sans-serif;
-	text-align: center;
+#noti{
+	background: rgb(0,0,51);
+background: linear-gradient(221deg, rgba(0,0,51,1) 27%, rgba(37,37,249,1) 63%, rgba(136,136,255,1) 89%);
+	color: white;
 }
-.tituloC{
-	background-color:  rgb(0, 0, 51);
-	color: #F5B42C;
-	font-size: 20px;
-	font-family: "Joan", sans-serif;
-	text-align: center;
-	margin: 40px;
-}
-.dejeMensaje{
-	font-size: 25px;
-}
-.fieldsetText{
-	border-style: dashed ;
-	border-radius: 2px;
-	border-width: 2px;
-	border-color: black;
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 20px;
-	padding: 10px;
-}
-	.fieldsetText label{
-		font-size: 18px;
-		font-style: normal;
-		font-weight: bold;
-		margin: 10px;
-		text-align: left;
+.foto1{
+		width: 30vw;
 	}
-	.fieldsetText input{
-			width: 60%;
-			font-size: 10px;
-			margin: 4px;
-			padding: 2px;
-		}
-.textMapa{
-	display: flex;
-	flex-direction: column;
+.foto2{
+		width: 50vw;
+	}
+.foto3{
+		width: 50vw;
+	}
+.foto4{
+		width: 50vw;
+	}
+
+@media (max-width: 1028px){
+	.llave{
+		width: 80vw;
+	}
+	.fondo{
+	width: 90vw;
 }
-.EncontranosAca{
-	background-color:  rgb(0, 0, 51);
-	color:#F5B42C;
-	font-size: 20px;
-	font-family: "Joan", sans-serif;
+}
+@media (max-width: 420px){
+	.llave{
+		width: 80vw;
+	}
+	.fondo{
+	width: 100vw;
+
+}
+	.textnoti{
+	font-size: 10px;
+	line-height: 1.8;
+}
+	.foto1{
+		width: 40vw;
+	}
+@media (max-width: 320px){
+	.llave{
+		width: 100vw;
+	}
+}
+}
+	
+/*================ Contacto ================*/
+
+.titu{
+	font-size: 2rem;
 	text-align: center;
+	color: #FFA500;
+	margin-top: 20px;
 }
-#Bottom{
-			width: 30%;
-			height: auto;
-			font-size: 10px;
-			margin: 4px;
-			padding: 2px;
+.cont{
+	background-color: rgba(186, 186, 186, 0.7);
+	color: black;
+	font-size: 2rem;
+	margin-top: 40px;
+	width: 80vw;
 }
+
+.btn-b{
+	background-color: black;
+	color: white;
+	font-size: 2rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.mapa{
+	color: white;
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+}
+	.mapa h2{
+		margin-bottom: 20px;
+		font-size: 2rem;
+	}
+	.mapa h4{
+		margin-bottom: 20px;
+	}
+	.mapa iframe{
+		width: 50vw;
+		height: 50vh;
+		margin-bottom: 40px;
+	}
+
+@media (max-width: 768px){
+	.mapa iframe{
+		width: 80vw;
+		height: 40vh;
+	}
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
