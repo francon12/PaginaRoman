@@ -54,7 +54,7 @@ footer{
 					color: #F5B42C;
 					}
 #botonera img{
-	width:  8vh;
+	width:  5vw;
 }
 #botonera {
 	position: sticky;
@@ -124,6 +124,7 @@ footer{
 	.textBombonera{
 		font-size: 25px;
 	}
+	
 }
 @media (max-width: 323px){
 	.redes img{
@@ -143,10 +144,11 @@ footer{
 	align-items: center;
 	justify-content: center;
 }
+
 .texto h1{
 	background: rgb(0,0,51);
 	background: linear-gradient(180deg, rgba(0,0,51,1) 55%, rgba(0,0,130,1) 79%);
-	width: 100%;
+	width: 100vw;
 	text-align: center;
 	color:#ffff99;
 	font-size: 5rem ;
@@ -175,8 +177,8 @@ footer{
 	}
 .inicio{
 	font-size: 4rem;
-	color: #1D3AE1;
-	background-color: rgba(255, 223, 0, 1);
+	color: white;
+	background-color: darkred;
 	border-top-style: double;
 	border-top-color: black;
 	border-top-width: 5px;
@@ -186,7 +188,16 @@ footer{
 	font-style: italic;
 	text-align: center;
 	}
-	
+.borde{
+	border-top-width: 10px;
+	border-top-color: whitesmoke;
+	border-top-style: double;
+}
+
+.fotito{
+	margin-top: 50px;
+	padding-top: 30px;
+}
 .boca{
 	font-size: 4rem;
 	color: #F5B42C;
@@ -247,7 +258,7 @@ footer{
 
 @media (max-width: 1200px){
 	.imagen{
-		width: 70vh;
+		width: 70vw;
 	}
 }
 @media (max-width: 768px){
@@ -278,7 +289,7 @@ footer{
 	text-align: center;
 	}
 	.bio img{
-		width: 30vw;
+		width: 50vw;
 		height: auto;
 	}
 	.bio p{
@@ -290,7 +301,7 @@ footer{
 
 		}
 		#imag{
-		width: 30vw;
+		width: 70vw;
 }
 }
 
@@ -373,8 +384,10 @@ footer{
 	text-align: center;
 	width: 100vw;
 	font-size: 40px;
-	font-style: italic;
+}
+.title{
 	font-weight: bolder;
+	font-style: italic;
 }
 .fondo{
 	width: 80vw;
@@ -391,10 +404,11 @@ footer{
 	justify-content: center;
 }
 #noti{
-	background: rgb(0,0,51);
-background: linear-gradient(221deg, rgba(0,0,51,1) 27%, rgba(37,37,249,1) 63%, rgba(136,136,255,1) 89%);
-	color: white;
+	background: rgb(23,23,21);
+	background: linear-gradient(180deg, rgba(23,23,21,1) 28%, rgba(36,40,66,1) 47%, rgba(235,238,252,1) 100%);
+	color: black;
 }
+
 .foto1{
 		width: 30vw;
 	}
@@ -488,24 +502,54 @@ background: linear-gradient(221deg, rgba(0,0,51,1) 27%, rgba(37,37,249,1) 63%, r
 		height: 40vh;
 	}
 }
+@media (max-width: 450px){
+	.cont{
+		font-size: 1rem;
+		width: 80vw;
+	}
 }
 
 
+/*================ ANIMACIONES ================*/
+
+.ima:hover {
+    transform: scale(1.1);
+}
+
+/*================ SELECTORES================*/
 
 
+#selectores p.one:first-letter{
+	background-color: darkred;
+	font-size: 3rem;
+}
 
+#selectores p.one:first-line{
+	font-style: italic;
+}
 
+#selectores p.two:first-letter{
+	background-color: blue;
+	color: white;
+	font-size: 3rem;
+}
 
+#selectores p.tres:first-letter{
+	background-color: yellow;
+	color: black;
+	font-size: 3rem;
+}
 
+#selectores p.cuatro:first-letter{
+	background-color: lightblue;
+	color: black;
+	font-size: 3rem;
+}
 
-
-
-
-
-
-
-
-
+#selectores p > span{
+	background-color: dimgrey;
+	font-weight: bold;
+}
 
 
 
