@@ -1,0 +1,19 @@
+En el archivo index.html sumé el seo con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: La mejor pagina de fans de Juan Roman Riquelme. Noticias, fotos, audios y biografia de su pasado y su vida en la actualidad.
+Palabras Clave: "riquelme, boca, juniors, boca juniors"
+
+En el archivo biografia.html sumé el seo con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: "Pagina sobre toda la carrera detallada de Juan Roman Riquelme y lugares en los que triunfo, como en Boca Juniors."
+Palabras Clave: "riquelme, biografia, vida, historia, trayectoria, barcelona, villareal, argentina"
+
+En el archivo noticias.html sumé el seo con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio:"Suscribite y recibi todas las noticias actualizadas de Boca Juniors y Juan Roman Riquelme como vicepresidente!! No estes desactualizado!."
+Palabras Clave: "riquelme, boca juniors, vicepresiende, partidos"
+
+En el archivo titulos.html sumé el seo con las siguientes características:
+Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio:"Pasate y chusmea la cantidad de campeonatos ganados en toda la trayectoria de Juan Roman Riquelme, torneos internacionales, nacionales y muchos mas."
+Palabras Clave: "intercontinentales, seleccion, argentina, villareal, real madrid, torneos, nacionales"
+
+En el archivo contacto.html sumé el seo con las siguientes características:
+Descripción: "Miles de fanes te estan esperando para que te unas!! contactanos para seguir recibiendo y ser parte de este grupo de Juan Roman Riquelme."
+Palabras Clave: "contacto, info, conectate, suscribite, preguntas"
