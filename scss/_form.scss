@@ -1,0 +1,345 @@
+.headerConteiner{
+	background-position: center;
+	@include d-flex(center, center,);
+}
+.fondo{
+	width: 100vw;
+}
+.textBombonera{
+	color: $keyColor;
+	font-size: $textLg;
+	position: absolute;
+	margin-bottom: 130px;
+	@media (max-width: 530px){ 
+		font-size:$textMs ;
+		@media (max-width: 383px){
+			font-size: $textMs;
+		}
+	}
+}
+.audioBoca{
+	position: absolute;
+	margin-bottom: 10px;
+	
+}
+.formulario{
+	text-align: center;
+	background-color: $white;
+	width: 60vw;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	@media (max-width: 530px){ 
+		width: 100vw; 
+	}
+
+}
+.marg{
+	background-color: $black;
+}
+
+/*================ Biografia ================*/
+
+.texto{
+	flex-direction: column;
+	@include d-flex(center, center);
+		h1{
+			background-color:map-get($map:$paleta, $key:'uno');
+			background: linear-gradient(180deg, rgba(0,0,51,1) 55%, rgba(0,0,130,1) 79%);
+			color: $keyColor;
+			@include tamaño(100vw, auto);
+			@include texto(5rem, 1.8, none);
+			text-align: center;
+			font-style: italic;
+			font-weight: bolder;
+			@media (max-width: 768px){ 
+				font-size: 3rem;
+		}
+	}		
+}
+.imagen{
+	width: 80vw;
+	@media (max-width: 1200px){
+		width: 70vw;
+	}
+}
+
+.bio{
+	width: 100%;
+	background-color: $black;
+	text-align: center;
+		img{
+			@include tamaño(25vw, auto);
+			@media (max-width: 768px){ 
+			@include tamaño(50vw, auto);
+		}
+	}
+}
+.parraf{ 
+			color: $white;
+			@include texto(2rem, 1.5, none);
+			margin: 45px 45px;
+			font-family: $mainFont;
+			@media (max-width: 768px){ 
+			font-size: 12px;
+		}
+	}
+
+.inicio{
+	@include texto(3rem, 1.5, underline);
+	color: $white;
+	background-color:map-get($map:$paleta, $key:'dos');
+	@include border();
+	@include font();
+	@media (max-width: 768px){ 
+		font-size: 2rem;
+	}
+}
+.borde{
+	border-top-width: 10px;
+	border-top-color: map-get($map:$paleta, $key:'tres');
+	border-top-style: double;
+}
+.fotito{
+	margin-top: 50px;
+	padding-top: 30px;
+}
+
+.boca{
+	@extend .inicio;
+	color: map-get($map:$paleta, $key:'cuatro');
+	background-color:map-get($map:$paleta, $key:'cinco');
+}
+
+.barca{
+	@extend .inicio;
+	color: map-get($map:$paleta, $key:'ocho');
+	background-color:map-get($map:$paleta, $key:'seis');
+}
+
+.villa{
+	@extend .inicio;
+	color: map-get($map:$paleta, $key:'uno');
+	background-color:map-get($map:$paleta, $key:'cuatro');
+}
+
+.arg{
+	@extend .inicio;
+	color: map-get($map:$paleta, $key:'tres');
+	background-color:map-get($map:$paleta, $key:'siete');
+}
+
+#imag{
+	width: 60vw;
+	@media (max-width: 768px){ 
+		width: 60vw;
+	}
+}
+
+/* //////////////////// SELECTORES ////////////////*/
+
+
+#selectores p.one:first-letter{
+	background-color: map-get($map:$paleta, $key:'seis');
+	font-size: 3rem;
+}
+
+#selectores p.one:first-line{
+	font-style: italic;
+}
+
+#selectores p.two:first-letter{
+	background-color: map-get($map:$paleta, $key:'uno');
+	color: $white;
+	font-size: 3rem;
+}
+
+#selectores p.tres:first-letter{
+	background-color: map-get($map:$paleta, $key:'once');
+	color: $black;
+	font-size: 3rem;
+}
+
+#selectores p.cuatro:first-letter{
+	background-color: map-get($map:$paleta, $key:'siete');
+	color: $black;
+	font-size: 3rem;
+}
+
+#selectores p > span{
+	background-color: map-get($map:$paleta, $key:'doce');
+	font-weight: bold;
+}
+
+/*================ Titulos ================*/
+
+.headerTitulo{
+	@include d-flex(center, center);
+	flex-direction: column;
+}
+.tituloRoman{
+	@include tamaño(100vw, auto);
+	color: $white;
+	background-color:map-get($map:$paleta, $key:'uno');
+	text-align: center;
+	font-size: $textSm;
+	border-style: ridge;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.slider{
+	width: 60vw;
+	margin-top: 20px;
+		@media (max-width: 768px){
+			width: 70vw;
+	}
+}
+.div{
+	@include d-flex(center, center);
+	flex-direction: column;
+}
+.tableta{
+	@include tamaño(80vw, 20vh);
+	text-align: center;
+}
+ .campeon{
+ 	background-color: map-get($map:$paleta, $key:'cuatro'); 
+ 	width: 100%;
+	font-size: 5rem;
+	margin-top: 20px;
+	text-align: center;
+	@include d-flex(center, center);
+	border-top-style: double;
+	border-top-width: 10px;
+	border-top-color: map-get($map:$paleta, $key:'diez');
+	border-bottom-style: double;
+	border-bottom-width: 10px;
+	border-bottom-color: map-get($map:$paleta, $key:'diez');
+		@media (max-width: 768px){
+			font-size: $textMs;
+	}
+ }
+
+.tabl{
+	@include texto(2rem, 1.8, none);
+	text-align: center;
+	font-weight: bold;
+		@media (max-width: 768px){
+		font-size: 1rem;
+	}
+}
+
+/*================ Noticias ================*/
+
+.noticias{
+	background-color: $secondaryColor;
+	text-align: center;
+	width: 100vw;
+	font-size:$textLg ;
+}
+
+.title{
+	@include font();
+}
+.fondo{
+	width: 80vw;
+	@media (max-width: 1028px){
+		width: 90vw;
+	}
+}
+.textnoti{
+	@include texto(15px, 1.8, none);
+	@media (max-width: 420px){
+			@include texto(10px, 1.8, none);
+		}
+}
+.llave{
+	width: 70vw;
+	margin-top: 20px;
+	@include d-flex(center, center);
+		@media (max-width: 1028px){
+			width: 80vw;
+				@media (max-width: 420px){
+					width: 100vw;
+		}
+	}
+}
+
+#noti{
+	background: rgb(23,23,21);
+	background: linear-gradient(180deg, rgba(23,23,21,1) 28%, rgba(36,40,66,1) 47%, rgba(235,238,252,1) 100%);
+	color: $black;
+}
+
+.foto1{
+	width: 30vw;
+		@media (max-width: 420px){
+			width: 40vw;
+		}
+}
+
+.foto2{
+	@extend .foto1;
+	width: 50vw;
+}
+.foto3{
+	@extend .foto2;
+}
+.foto4{
+	@extend .foto2;
+}
+
+/*================ Contacto ================*/
+.titu{
+	font-size: 2rem;
+	text-align: center;
+	color: $secondaryColor;
+	margin-top: 20px;
+}
+
+.cont{
+	background-color: map-get($map:$paleta, $key:'nueve');;
+	color: $black;
+	font-size: 2rem;
+	margin-top: 40px;
+	width: 80vw;
+	@media (max-width: 450px){
+		font-size: 1rem;
+		width: 80vw;
+	}
+}
+
+.btn-b{
+	background-color: $black;
+	color: $white;
+	font-size: 2rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.mapa{
+	color: $white;
+	margin-top: 40px;
+	@include d-flex(center,center);
+	flex-direction: column;
+	h2{
+		margin-bottom: 20px;
+		font-size: 2rem;
+		h4{
+			margin-bottom: 20px;
+			iframe{
+				@include tamaño (50vw, 50vh);
+					@media (max-width: 768px){
+						@include tamaño (80vw, 40vh);
+				}
+			}
+		}
+	}
+}
+
+/*================ ANIMACIONES ================*/
+
+.ima:hover {
+    transform: scale(1.1);
+}
+

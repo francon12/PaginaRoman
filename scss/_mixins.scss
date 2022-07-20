@@ -1,0 +1,44 @@
+//mixins
+@mixin texto($size, $interlineado, $deco){
+		font-size: $size;
+		line-height: $interlineado;
+		text-decoration: $deco;
+}
+@mixin border(){
+	border-top-style: double;
+  	border-top-color: $black;
+ 	border-top-width: 5px;
+}
+@mixin d-flex($justify, $aling,){
+	display: flex;
+	justify-content: $justify;
+	align-items: $aling;
+}
+@mixin tamaño($width, $height){
+	width: $width;
+	height: $height;
+}
+@mixin font(){
+	font-weight: bolder;
+	font-family: $secondaryFont;
+	font-style: italic;
+	text-align: center;
+}
+
+//maps
+$paleta:(
+	'uno': rgb(0,0,51),
+    'dos': #C60000FF,
+    'tres':#E8E8E8FF,
+    'cuatro':#fabc3a,
+    'cinco':rgba(0, 0, 51, 0.5),
+    'seis':#A80000FF,
+    'siete':lightblue,
+    'ocho':#001c9e,
+    'nueve':rgba(186, 186, 186, 0.7),
+    'diez':#153efe,
+    'once': #fff411,
+    'doce':#9d9d98,
+	);
+
+
