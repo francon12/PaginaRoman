@@ -1,7 +1,7 @@
 {
   "name": "desarrollo-web",
   "version": "1.0.0",
-  "description": "Pagina de fan de juan roman riquelme con sus titulos, biografia de toda su vida, y noticias actualizadas al dia. ",
+  "description": "Pagina de fan de Juan Roman Riquelme con sus titulos, biografia de toda su vida, y noticias actualizadas al dia. ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
