@@ -17,6 +17,9 @@
   font-family: $mainFont;
   position: sticky; 
     img {
-     width: 4vw; 
+     width: 4vw;
+    @media (max-width: 420px){
+      width: 8vw;
+     }
   }
 }

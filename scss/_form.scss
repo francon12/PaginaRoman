@@ -60,6 +60,9 @@
 	width: 80vw;
 	@media (max-width: 1200px){
 		width: 70vw;
+		@media (max-width: 458px){ 
+		width: 100vw;
+		}
 	}
 }
 
@@ -76,11 +79,20 @@
 }
 .parraf{ 
 			color: $white;
-			@include texto(2rem, 1.5, none);
+			@include texto(3rem, 1.8, none);
 			margin: 45px 45px;
 			font-family: $mainFont;
+			@media (max-width: 1500px){ 
+			font-size: 25px;
+			line-height: 1.5;
+			margin-top: 10px;
 			@media (max-width: 768px){ 
 			font-size: 12px;
+				@media (max-width: 450px){ 
+				margin-top: 10px;
+				
+				}
+			}
 		}
 	}
 
@@ -102,6 +114,10 @@
 .fotito{
 	margin-top: 50px;
 	padding-top: 30px;
+	@media (max-width: 768px){ 
+		margin-top: 10px;
+		padding-top: 10px;
+	}
 }
 
 .boca{
@@ -177,16 +193,13 @@
 	flex-direction: column;
 }
 .tituloRoman{
-	@include tamaño(100vw, auto);
-	color: $white;
-	background-color:map-get($map:$paleta, $key:'uno');
+	background-color: $secondaryColor;
 	text-align: center;
-	font-size: $textSm;
-	border-style: ridge;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-}
+	width: 100vw;
+	font-size: $textLg;
+
+	}
+	
 .slider{
 	width: 60vw;
 	margin-top: 20px;
@@ -203,7 +216,7 @@
 	text-align: center;
 }
  .campeon{
- 	background-color: map-get($map:$paleta, $key:'cuatro'); 
+ 	color: $white;
  	width: 100%;
 	font-size: 5rem;
 	margin-top: 20px;
@@ -235,14 +248,22 @@
 	background-color: $secondaryColor;
 	text-align: center;
 	width: 100vw;
-	font-size:$textLg ;
+	font-size:$textLg;
 }
 
 .title{
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size: $textXxl;
 	@include font();
+		@media (max-width: 550px){
+			padding-top:2px;
+			padding-bottom:2px;
+			font-size: $textMs;
+	}
 }
 .fondo{
-	width: 80vw;
+	width: 100vw;
 	@media (max-width: 1028px){
 		width: 90vw;
 	}
@@ -266,8 +287,11 @@
 }
 
 #noti{
-	background: rgb(23,23,21);
-	background: linear-gradient(180deg, rgba(23,23,21,1) 28%, rgba(36,40,66,1) 47%, rgba(235,238,252,1) 100%);
+	background-color: #8BC6EC;
+	background-image: -webkit-linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+	background-image: -moz-linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+	background-image: -o-linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+	background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
 	color: $black;
 }
 
@@ -323,20 +347,30 @@
 	@include d-flex(center,center);
 	flex-direction: column;
 	h2{
+		margin-top: 20px;
 		margin-bottom: 20px;
 		font-size: 2rem;
 		h4{
-			margin-bottom: 20px;
-			iframe{
-				@include tamaño (50vw, 50vh);
-					@media (max-width: 768px){
-						@include tamaño (80vw, 40vh);
-				}
-			}
+			margin-bottom: 20px;	
 		}
 	}
 }
-
+.conte{
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-top-color: map-get($map:$paleta, $key:'ocho');
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: map-get($map:$paleta, $key:'ocho');
+}
+.map{
+	@include tamaño (50vw, 50vh);
+	margin-top: 20px;
+	margin-bottom: 30px;
+		@media (max-width: 450px){
+			@include tamaño (80vw, 20vh);
+	}
+}
 /*================ ANIMACIONES ================*/
 
 .ima:hover {

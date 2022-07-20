@@ -30,6 +30,9 @@ body {
   position: sticky; }
   #botonera img {
     width: 4vw; }
+    @media (max-width: 420px) {
+      #botonera img {
+        width: 8vw; } }
 
 .headerConteiner {
   background-position: center;
@@ -96,6 +99,9 @@ body {
   @media (max-width: 1200px) {
     .imagen {
       width: 70vw; } }
+  @media (max-width: 1200px) and (max-width: 458px) {
+    .imagen {
+      width: 100vw; } }
 
 .bio {
   width: 100%;
@@ -111,14 +117,22 @@ body {
 
 .parraf {
   color: #F5F0F0;
-  font-size: 2rem;
-  line-height: 1.5;
+  font-size: 3rem;
+  line-height: 1.8;
   text-decoration: none;
   margin: 45px 45px;
   font-family: "Lato", sans-serif; }
-  @media (max-width: 768px) {
+  @media (max-width: 1500px) {
+    .parraf {
+      font-size: 25px;
+      line-height: 1.5;
+      margin-top: 10px; } }
+  @media (max-width: 1500px) and (max-width: 768px) {
     .parraf {
       font-size: 12px; } }
+  @media (max-width: 1500px) and (max-width: 768px) and (max-width: 450px) {
+    .parraf {
+      margin-top: 10px; } }
 
 .inicio, .boca, .barca, .villa, .arg {
   font-size: 3rem;
@@ -145,6 +159,10 @@ body {
 .fotito {
   margin-top: 50px;
   padding-top: 30px; }
+  @media (max-width: 768px) {
+    .fotito {
+      margin-top: 10px;
+      padding-top: 10px; } }
 
 .boca {
   color: #fabc3a;
@@ -203,16 +221,10 @@ body {
   flex-direction: column; }
 
 .tituloRoman {
-  width: 100vw;
-  height: auto;
-  color: #F5F0F0;
-  background-color: #000033;
+  background-color: #F5B42C;
   text-align: center;
-  font-size: 15px;
-  border-style: ridge;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  width: 100vw;
+  font-size: 50px; }
 
 .slider {
   width: 60vw;
@@ -233,7 +245,7 @@ body {
   text-align: center; }
 
 .campeon {
-  background-color: #fabc3a;
+  color: #F5F0F0;
   width: 100%;
   font-size: 5rem;
   margin-top: 20px;
@@ -269,13 +281,21 @@ body {
   font-size: 50px; }
 
 .title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 5rem;
   font-weight: bolder;
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   text-align: center; }
+  @media (max-width: 550px) {
+    .title {
+      padding-top: 2px;
+      padding-bottom: 2px;
+      font-size: 30px; } }
 
 .fondo {
-  width: 80vw; }
+  width: 100vw; }
   @media (max-width: 1028px) {
     .fondo {
       width: 90vw; } }
@@ -304,8 +324,11 @@ body {
       width: 100vw; } }
 
 #noti {
-  background: #171715;
-  background: linear-gradient(180deg, #171715 28%, #242842 47%, #ebeefc 100%);
+  background-color: #8BC6EC;
+  background-image: -webkit-linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  background-image: -moz-linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  background-image: -o-linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
   color: #0F0E0E; }
 
 .foto1, .foto2, .foto3, .foto4 {
@@ -350,17 +373,29 @@ body {
   align-items: center;
   flex-direction: column; }
   .mapa h2 {
+    margin-top: 20px;
     margin-bottom: 20px;
     font-size: 2rem; }
     .mapa h2 h4 {
       margin-bottom: 20px; }
-      .mapa h2 h4 iframe {
-        width: 50vw;
-        height: 50vh; }
-        @media (max-width: 768px) {
-          .mapa h2 h4 iframe {
-            width: 80vw;
-            height: 40vh; } }
+
+.conte {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #001c9e;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #001c9e; }
+
+.map {
+  width: 50vw;
+  height: 50vh;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+  @media (max-width: 450px) {
+    .map {
+      width: 80vw;
+      height: 20vh; } }
 
 /*================ ANIMACIONES ================*/
 .ima:hover {
