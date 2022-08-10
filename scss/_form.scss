@@ -1,10 +1,13 @@
+/*================ INDEX ================*/
 .headerConteiner{
 	background-position: center;
 	@include d-flex(center, center,);
 }
+
 .fondo{
 	width: 100vw;
 }
+
 .textBombonera{
 	color: $keyColor;
 	font-size: $textLg;
@@ -17,11 +20,12 @@
 		}
 	}
 }
+
 .audioBoca{
 	position: absolute;
-	margin-bottom: 10px;
-	
+	margin-bottom: 10px;	
 }
+
 .formulario{
 	text-align: center;
 	background-color: $white;
@@ -31,8 +35,8 @@
 	@media (max-width: 530px){ 
 		width: 100vw; 
 	}
-
 }
+
 .marg{
 	background-color: $black;
 }
@@ -51,11 +55,12 @@
 			text-align: center;
 			font-style: italic;
 			font-weight: bolder;
-			@media (max-width: 768px){ 
+			@media (max-width: 900px){ 
 				font-size: 3rem;
 		}
 	}		
 }
+
 .imagen{
 	width: 80vw;
 	@media (max-width: 1200px){
@@ -77,6 +82,7 @@
 		}
 	}
 }
+
 .parraf{ 
 			color: $white;
 			@include texto(3rem, 1.8, none);
@@ -106,11 +112,13 @@
 		font-size: 2rem;
 	}
 }
+
 .borde{
 	border-top-width: 10px;
 	border-top-color: map-get($map:$paleta, $key:'tres');
 	border-top-style: double;
 }
+
 .fotito{
 	margin-top: 50px;
 	padding-top: 30px;
@@ -192,6 +200,7 @@
 	@include d-flex(center, center);
 	flex-direction: column;
 }
+
 .tituloRoman{
 	background-color: $secondaryColor;
 	text-align: center;
@@ -207,14 +216,29 @@
 			width: 70vw;
 	}
 }
+
+.fot1{
+	width: 50vw;
+}
+
+.fot2{
+	width: 53vw;
+}
+
+.fot3{
+	width: 40vw;
+}
+
 .div{
 	@include d-flex(center, center);
 	flex-direction: column;
 }
+
 .tableta{
 	@include tamaño(80vw, 20vh);
 	text-align: center;
 }
+
  .campeon{
  	color: $white;
  	width: 100%;
@@ -242,6 +266,86 @@
 	}
 }
 
+.art{
+	margin-top: 20px;
+	background:$black;
+	border-bottom-color:map-get($map:$paleta, $key:'cuatro');
+	border-bottom-width:3px;
+	border-bottom-style:solid;
+	
+}
+
+.titul{
+	color: map-get($map:$paleta, $key:'cinco');
+	font-size: $textMs;
+	text-align: center;
+	font-weight: bold;
+	background-color:map-get($map:$paleta, $key:'cuatro');
+}
+
+.stats{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items:center;
+	margin-top: 15px;
+}
+
+.gol{
+	color: $white;
+	font-size: $textMs;
+	border-style: solid;
+	border-width: 3px;
+	border-color: map-get($map:$paleta, $key:'ocho');
+	border-radius: 15px;
+	padding:6px 6px;
+	background: rgb(3,38,107);
+	background: linear-gradient(93deg, rgba(3,38,107,1) 32%, rgba(215,208,17,1) 100%);
+	@media (max-width: 500px){
+		border-width: 1px;
+		font-size: $textSm;
+	}
+}
+
+.gol3{
+	@extend .gol;
+	border-color:$black;
+	background: rgb(23,23,21);
+	background: linear-gradient(93deg, rgba(23,23,21,1) 28%, rgba(36,40,66,1) 47%, rgba(235,238,252,1) 100%);
+}
+
+.barr{
+	width: 70vw;
+	height: 5vh;
+	text-align: center;
+	animation: Aumentar 5s ease;
+	@media (max-width: 500px){
+		height: 2vh;
+	}
+}
+
+.barra{
+	font-size: $textMs;
+	text-align: left;
+	font-weight: bold;
+	background: rgb(3,38,107);
+	background: linear-gradient(93deg, rgba(3,38,107,1) 32%, rgba(215,208,17,1) 100%);
+	@media (max-width: 500px){
+		font-size: $textSm;
+	}
+}
+
+.barra3{
+	@extend .barra;
+	background: rgb(23,23,21);
+	background: linear-gradient(93deg, rgba(23,23,21,1) 28%, rgba(36,40,66,1) 47%, rgba(235,238,252,1) 100%);
+}
+
+@keyframes Aumentar{
+	0%{width: 0%;}
+	100%{width: 70%;}
+}
+
 /*================ Noticias ================*/
 
 .noticias{
@@ -262,18 +366,21 @@
 			font-size: $textMs;
 	}
 }
+
 .fondo{
 	width: 100vw;
 	@media (max-width: 1028px){
 		width: 90vw;
 	}
 }
+
 .textnoti{
 	@include texto(15px, 1.8, none);
 	@media (max-width: 420px){
 			@include texto(10px, 1.8, none);
 		}
 }
+
 .llave{
 	width: 70vw;
 	margin-top: 20px;
@@ -306,9 +413,11 @@
 	@extend .foto1;
 	width: 50vw;
 }
+
 .foto3{
 	@extend .foto2;
 }
+
 .foto4{
 	@extend .foto2;
 }
@@ -355,6 +464,7 @@
 		}
 	}
 }
+
 .conte{
 	border-top-style: solid;
 	border-top-width: 2px;
@@ -363,6 +473,7 @@
 	border-bottom-width: 2px;
 	border-bottom-color: map-get($map:$paleta, $key:'ocho');
 }
+
 .map{
 	@include tamaño (50vw, 50vh);
 	margin-top: 20px;
@@ -371,6 +482,59 @@
 			@include tamaño (80vw, 20vh);
 	}
 }
+
+/*================ ERROR 404 ================*/
+
+.error{
+	background-color: rgb(0,0,51);
+	background-attachment: fixed;
+	overflow-x: hidden;
+}
+
+.error404{
+	@include d-flex(center,center);
+	flex-direction: column;
+	text-align: center;
+	height: calc(100vh - 100px);
+	width: 100%;
+}
+
+.col{
+	color: map-get($map:$paleta, $key:'cuatro');
+	@include texto(4rem, 1.8, none);
+	@media (max-width: 450px){
+			@include texto(2rem, 1.8, none);
+	}
+}
+
+.orion{
+	margin: 20px 20px;
+	width: 80%;
+	border: 10px solid rgba(0, 0, 0, 0.5);
+	border-radius: 2px; 
+}
+
+.animation{
+	animation-duration: 2.5s;
+	animation-fill-mode: both;
+	animation-iteration-count:infinite;
+}
+
+.titu{
+	animation-name:titu
+}
+
+.btn-bt{
+	background-color:#fabc3a;
+	font-size: 15px;
+}
+
+@keyframes titu {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0px);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+
 /*================ ANIMACIONES ================*/
 
 .ima:hover {
